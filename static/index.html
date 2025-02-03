@@ -3,60 +3,100 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wazoo, not your typical company</title>
+    <title>Wazoo Technologies</title>
     <meta
       name="description"
-      content="Wazoo is another breed of company. Our technology is out of this world."
+      content="Cutting-edge technology and innovation."
     >
-    <link rel="icon" href="https://fart.tools/fl-logo.png" />
     <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="https://fart.tools/fl-logo.png" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a class="logo" href="/">Wazoo</a>
-
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="sticky-header">
+      <nav class="container">
+        <a href="/" class="logo" id="top">Wazoo</a>
+        <div class="nav-links">
+          <a href="https://linkedin.com/company/FartLabs" class="nav-link"
+          >LinkedIn</a>
+          <a href="https://github.com/Fartlabs/wazoo.tech" class="nav-link"
+          >GitHub</a>
+          <a href="https://fartlabs.org" class="nav-link">FartLabs</a>
+        </div>
+      </nav>
     </header>
 
-    <main class="container">
-      <section id="hero">
-        <h1>Welcome to Wazoo</h1>
-        <p>The future of technology is now thanks to science!</p>
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="container hero-content">
+          <h1>
+            Futuristic technologies<br>out the <b>Wazoo</b>!
+          </h1>
+          <p>
+            Innovative solutions that transform how we interact with the world.
+          </p>
+          <div class="hero-cta">
+            <a href="#about" class="secondary-button capitalize">Learn more</a>
+          </div>
+        </div>
       </section>
 
-      <section id="about">
-        <h2>About us</h2>
-        <p>
-          Wazoo is at the forefront of futuristic tech solutions, pushing the
-          boundaries of innovation.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Featured projects</h2>
-        <div class="project-card">
-          <a
-            href="https://fartlabs.org/"
-            class="button"
-            target="_blank"
-            rel="noopener noreferrer"
-          ><h3>FartLabs</h3></a>
-          <p>We develop software out the wazoo!</p>
+      <section id="about" class="about-section container">
+        <h2>About Wazoo</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              At Wazoo, we're not just another tech company. We're visionaries
+              pushing the boundaries of what's possible, creating solutions that
+              redefine industries and improve lives.
+            </p>
+            <p>
+              Our team of innovators works at the intersection of creativity and
+              technology, developing groundbreaking products that solve
+              real-world challenges.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <h3 class="capitalize">Innovation</h3>
+              <p>Cutting-edge solutions that challenge today's status quo.</p>
+            </div>
+            <div class="highlight-card">
+              <h3 class="capitalize">Impact</h3>
+              <p>Technology designed to make an immeasurable difference.</p>
+            </div>
+            <div class="highlight-card">
+              <h3 class="capitalize">Emerging tech</h3>
+              <p>
+                Exploring the frontiers of artificial intelligence and machine
+                learning.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Wazoo. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-column">
+          <h3>Wazoo</h3>
+          <p>Innovating for a better tomorrow.</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="capitalize">Quick links</h3>
+          <a href="#top">Top🔝</a>
+          <a href="https://fartlabs.org/about">About FartLabs</a>
+        </div>
+        <div class="footer-column">
+          <h3 class="capitalize">Connect</h3>
+          <a href="https://linkedin.com/company/FartLabs">LinkedIn</a>
+          <a href="https://github.com/FartLabs">GitHub</a>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Wazoo Technologies
+          </p>
+        </div>
       </div>
     </footer>
   </body>

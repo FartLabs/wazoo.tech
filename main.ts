@@ -1,7 +1,6 @@
 import type { Route } from "@std/http/unstable-route";
 import { route } from "@std/http/unstable-route";
 import { serveDir } from "@std/http/file-server";
-import { parse } from "@std/jsonc";
 
 export default {
   fetch(request) {
