@@ -1,0 +1,11 @@
+{
+  "lock": false,
+  "imports": {
+    "@std/http": "jsr:@std/http@^1.0.12",
+    "@std/jsonc": "jsr:@std/jsonc@^1.0.1"
+  },
+  "tasks": {
+    "dev": "deno serve --allow-read --allow-import --parallel main.ts",
+    "outdated": "deno outdated --latest --update"
+  }
+}
