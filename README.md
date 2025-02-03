@@ -1,7 +1,7 @@
 # [wazoo.tech](https://wazoo.tech/)
 
 You found Wazoo's official company website. Wazoo is a parent company of
-projects such as [**@FartLabs**](https://github.com/FartLabs).
+projects like [**@FartLabs**](https://github.com/FartLabs).
 
 ## Development
 
