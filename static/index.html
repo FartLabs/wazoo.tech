@@ -16,6 +16,7 @@
       :root {
         /* Light Mode Colors */
         --bg-primary-light: #fff9c4; /* Light Yellow */
+        --bg-primary-transparent-light: #fff9c4ee;
         --bg-secondary-light: #ffffe0; /* Lighter Yellow */
         --text-primary-light: #3e2723; /* Dark Brown */
         --accent-primary-light: #ff9800; /* Orange */
@@ -24,6 +25,7 @@
 
         /* Dark Mode Colors */
         --bg-primary-dark: #331a00; /* Dark Brown */
+        --bg-primary-transparent-dark: #331a00ee;
         --bg-secondary-dark: #4e342e; /* Darker Brown */
         --text-primary-dark: #ffab40; /* Orange-Yellow */
         --accent-primary-dark: #ff9800; /* Orange */
@@ -32,6 +34,7 @@
 
         /* Default to Light Mode */
         --bg-primary: var(--bg-primary-light);
+        --bg-primary-transparent: var(--bg-primary-transparent-light);
         --bg-secondary: var(--bg-secondary-light);
         --text-primary: var(--text-primary-light);
         --accent-primary: var(--accent-primary-light);
@@ -91,7 +94,7 @@
       .sticky-header {
         position: sticky;
         top: 0;
-        background-color: rgba(224, 242, 241, 0.9);
+        background-color: var(--bg-primary-transparent);
         backdrop-filter: blur(10px);
         z-index: 100;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -288,6 +291,7 @@
       @media (prefers-color-scheme: dark) {
         :root {
           --bg-primary: var(--bg-primary-dark);
+          --bg-primary-transparent: var(--bg-primary-transparent-dark);
           --bg-secondary: var(--bg-secondary-dark);
           --text-primary: var(--text-primary-dark);
           --accent-primary: var(--accent-primary-dark);
