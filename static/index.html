@@ -9,23 +9,25 @@
       content="Cutting-edge technology and innovation."
     >
     <link rel="icon" href="https://fartlabs.org/fl-logo.png" />
+    <link href="https://fonts.cdnfonts.com/css/starborn" rel="stylesheet">
+
     <style>
       :root {
         /* Light Mode Colors */
-        --bg-primary-light: #e0f2f1;
-        --bg-secondary-light: #b2dfdb;
-        --text-primary-light: #333333;
-        --accent-primary-light: #00796b;
-        --accent-secondary-light: #009688;
-        --card-bg-light: #b2dfdb;
+        --bg-primary-light: #fff9c4; /* Light Yellow */
+        --bg-secondary-light: #ffffe0; /* Lighter Yellow */
+        --text-primary-light: #3e2723; /* Dark Brown */
+        --accent-primary-light: #ff9800; /* Orange */
+        --accent-secondary-light: #ffc107; /* Amber */
+        --card-bg-light: #ffffe0; /* Lighter Yellow */
 
         /* Dark Mode Colors */
-        --bg-primary-dark: #004d40;
-        --bg-secondary-dark: #00695c;
-        --text-primary-dark: #ffffff;
-        --accent-primary-dark: #4db6ac;
-        --accent-secondary-dark: #80cbc4;
-        --card-bg-dark: #00695c;
+        --bg-primary-dark: #331a00; /* Dark Brown */
+        --bg-secondary-dark: #4e342e; /* Darker Brown */
+        --text-primary-dark: #ffab40; /* Orange-Yellow */
+        --accent-primary-dark: #ff9800; /* Orange */
+        --accent-secondary-dark: #ffc107; /* Amber */
+        --card-bg-dark: #4e342e; /* Darker Brown */
 
         /* Default to Light Mode */
         --bg-primary: var(--bg-primary-light);
@@ -61,6 +63,22 @@
         transition: background-color 0.3s, color 0.3s;
       }
 
+      h1, h2, h3, h4, h5, h6 {
+        font-family:
+          "Starborn",
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+      }
+
       .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -88,6 +106,7 @@
       .logo {
         font-size: 1.5rem;
         font-weight: bold;
+        font-family: "Starborn";
         color: var(--accent-primary);
         text-decoration: none;
       }
@@ -272,10 +291,6 @@
           --accent-primary: var(--accent-primary-dark);
           --accent-secondary: var(--accent-secondary-dark);
           --card-bg: var(--card-bg-dark);
-        }
-
-        .sticky-header {
-          background-color: rgba(0, 77, 64, 0.9);
         }
       }
 
