@@ -8,24 +8,32 @@
       name="description"
       content="Cutting-edge technology and innovation."
     >
-    <link rel="icon" href="https://fart.tools/fl-logo.png" />
+    <link rel="icon" href="https://fartlabs.org/fl-logo.png" />
     <style>
       :root {
-        /* Desert Oasis - Light Mode */
-        --bg-primary: #a1887f;
-        --bg-secondary: #ce93d8;
-        --text-primary: #ffffff;
-        --accent-primary: #4db6ac;
-        --accent-secondary: #4db6ac;
-        --card-bg: #ce93d8;
+        /* Light Mode Colors */
+        --bg-primary-light: #e0f2f1;
+        --bg-secondary-light: #b2dfdb;
+        --text-primary-light: #333333;
+        --accent-primary-light: #00796b;
+        --accent-secondary-light: #009688;
+        --card-bg-light: #b2dfdb;
 
-        /* Dark Mode Variables */
-        --bg-primary-dark: #4e342e;
-        --bg-secondary-dark: #7b5293;
-        --text-primary-dark: #eeeeee;
-        --accent-primary-dark: #1976d2;
-        --accent-secondary-dark: #1976d2;
-        --card-bg-dark: #7b5293;
+        /* Dark Mode Colors */
+        --bg-primary-dark: #004d40;
+        --bg-secondary-dark: #00695c;
+        --text-primary-dark: #ffffff;
+        --accent-primary-dark: #4db6ac;
+        --accent-secondary-dark: #80cbc4;
+        --card-bg-dark: #00695c;
+
+        /* Default to Light Mode */
+        --bg-primary: var(--bg-primary-light);
+        --bg-secondary: var(--bg-secondary-light);
+        --text-primary: var(--text-primary-light);
+        --accent-primary: var(--accent-primary-light);
+        --accent-secondary: var(--accent-secondary-light);
+        --card-bg: var(--card-bg-light);
       }
 
       * {
@@ -50,6 +58,7 @@
         background-color: var(--bg-primary);
         color: var(--text-primary);
         line-height: 1.6;
+        transition: background-color 0.3s, color 0.3s;
       }
 
       .container {
@@ -62,11 +71,11 @@
       .sticky-header {
         position: sticky;
         top: 0;
-        background-color: rgba(161, 136, 127, 0.9);
+        background-color: rgba(224, 242, 241, 0.9);
         backdrop-filter: blur(10px);
         z-index: 100;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 0 1rem; /* Added horizontal padding */
+        padding: 0 1rem;
       }
 
       .sticky-header nav {
@@ -122,7 +131,7 @@
           var(--bg-primary),
           var(--bg-secondary)
         );
-        padding: 6rem 1rem; /* Added horizontal padding */
+        padding: 6rem 1rem;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -172,11 +181,11 @@
 
       /* About Section */
       .about-section {
-        padding: 4rem 1rem; /* Added horizontal padding */
+        padding: 4rem 1rem;
       }
 
       .about-section h2 {
-        margin-bottom: 1rem; /* Added margin to header */
+        margin-bottom: 1rem;
       }
 
       .about-grid {
@@ -188,7 +197,7 @@
       .about-text {
         display: flex;
         flex-direction: column;
-        gap: 1rem; /* Added gap between paragraphs */
+        gap: 1rem;
       }
 
       .about-highlights {
@@ -205,8 +214,7 @@
       /* Footer */
       .site-footer {
         background-color: var(--bg-secondary);
-        padding: 3rem
-          1rem; /* Added horizontal padding to match other sections */
+        padding: 3rem 1rem;
       }
 
       .footer-content {
@@ -218,7 +226,7 @@
       .footer-column {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem; /* Added gap between footer column elements */
+        gap: 0.5rem;
       }
 
       .footer-column a {
@@ -264,6 +272,10 @@
           --accent-primary: var(--accent-primary-dark);
           --accent-secondary: var(--accent-secondary-dark);
           --card-bg: var(--card-bg-dark);
+        }
+
+        .sticky-header {
+          background-color: rgba(0, 77, 64, 0.9);
         }
       }
 
