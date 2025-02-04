@@ -148,6 +148,31 @@
         position: relative;
       }
 
+      .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+      }
+
+      .logo-image {
+        width: 40px;
+        transition: transform 0.6s linear;
+      }
+
+      .logo-image:hover {
+        animation: rotate360 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+
+      @keyframes rotate360 {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
       /* Hero Section */
       .hero-section {
         background: linear-gradient(
@@ -328,7 +353,15 @@
   <body>
     <header class="sticky-header">
       <nav class="container">
-        <a href="/" class="logo">Wazoo</a>
+        <a href="/" class="logo">
+          <!-- <picture>
+            <source
+              media="(prefers-color-scheme: dark)"
+              srcset="/wazoo-dark.svg"
+            />
+            <img src="/wazoo.svg" alt="Wazoo logo" class="logo-image" />
+          </picture> -->
+          <span class="logo-text">Wazoo</span></a>
         <div class="nav-links">
           <a
             href="https://linkedin.com/company/wazootech"
