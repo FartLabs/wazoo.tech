@@ -1,10 +1,11 @@
 {
   "lock": false,
   "imports": {
+    "@kitsonk/ga4": "jsr:@kitsonk/ga4@^0.1.0",
     "@std/http": "jsr:@std/http@^1.0.12"
   },
   "tasks": {
-    "dev": "deno serve --allow-read --allow-import --parallel main.ts",
+    "dev": "deno serve --allow-read --allow-import --allow-env --parallel main.ts",
     "outdated": "deno outdated --latest --update"
   }
 }
