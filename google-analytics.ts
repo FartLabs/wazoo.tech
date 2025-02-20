@@ -1,12 +1,12 @@
 import { GA4Report } from "@kitsonk/ga4";
 
 export function useGoogleAnalytics(
-  measurementId: string,
-  fn: Deno.ServeHandler<Deno.Addr>
+  measurementId: string | undefined,
+  fn: Deno.ServeHandler<Deno.Addr>,
 ) {
   return async function (
     request: Request,
-    info: Deno.ServeHandlerInfo<Deno.Addr>
+    info: Deno.ServeHandlerInfo<Deno.Addr>,
   ) {
     let response: Response;
     try {
