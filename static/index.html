@@ -261,6 +261,86 @@
         border-radius: 10px;
       }
 
+      /* Who We Are Section */
+      .who-we-are-section {
+        padding: 4rem 1rem;
+        background-color: var(--bg-secondary);
+      }
+
+      .who-we-are-section h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .who-we-are-intro {
+        text-align: center;
+        margin-bottom: 3rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .companies-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .company-card {
+        background-color: var(--card-bg);
+        padding: 0;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .company-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .company-card-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .company-card-content {
+        padding: 2rem;
+      }
+
+      .company-card h3 {
+        color: var(--accent-primary);
+        margin-bottom: 1rem;
+      }
+
+      .company-card p {
+        margin-bottom: 1.5rem;
+      }
+
+      .company-link {
+        display: inline-block;
+        color: var(--accent-primary);
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        transition: color 0.3s ease;
+      }
+
+      .company-link::after {
+        content: "↗";
+        margin-left: 0.25rem;
+      }
+
+      .company-link:hover {
+        color: var(--accent-secondary);
+      }
+
       /* Footer */
       .site-footer {
         background-color: var(--bg-secondary);
@@ -337,7 +417,8 @@
         }
 
         .about-grid,
-        .footer-content {
+        .footer-content,
+        .companies-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -408,6 +489,10 @@
               and technology converge, conjuring futuristic solutions that
               transcend conventional limitations and address today's challenges.
             </p>
+            <p>
+              Our team includes software engineers from Google and Amazon,
+              bringing world-class expertise to every interaction.
+            </p>
           </div>
           <div class="about-highlights">
             <div class="highlight-card">
@@ -428,6 +513,59 @@
           </div>
         </div>
       </section>
+
+      <section class="who-we-are-section">
+        <div class="container">
+          <h2>Who We Are</h2>
+          <div class="who-we-are-intro">
+            <p>
+              Wazoo Technologies is a forward-thinking technology company that
+              operates through its children companies, each focused on
+              world-class innovation.
+            </p>
+          </div>
+          <div class="companies-grid">
+            <div class="company-card">
+              <img
+                src="/fartlabs-screenshot.png"
+                alt="FartLabs landing page"
+                class="company-card-image"
+              />
+              <div class="company-card-content">
+                <h3>FartLabs</h3>
+                <p>
+                  Our neuro-symbolic AI research lab pushing the boundaries of
+                  what's possible in software development and innovation.
+                </p>
+                <a
+                  href="https://fartlabs.org"
+                  class="company-link"
+                  target="_blank"
+                >Visit FartLabs</a>
+              </div>
+            </div>
+            <div class="company-card">
+              <img
+                src="/studio-wazoo-screenshot.png"
+                alt="Wazoo Web Design Studio landing page"
+                class="company-card-image"
+              />
+              <div class="company-card-content">
+                <h3>Wazoo Web Design Studio</h3>
+                <p>
+                  A creative web design studio specializing in modern,
+                  responsive websites and digital experiences.
+                </p>
+                <a
+                  href="https://studio.wazoo.tech"
+                  class="company-link"
+                  target="_blank"
+                >Visit Studio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -438,7 +576,7 @@
         </div>
         <div class="footer-column">
           <h3 class="capitalize">Quick links</h3>
-          <a href="https://fartlabs.org/about">About FartLabs 🧪</a>
+          <a href="https://fartlabs.org/mission">About FartLabs 🧪</a>
           <a href="https://jsonx.fart.tools/jsx">Understanding JSX</a>
         </div>
         <div class="footer-column">
