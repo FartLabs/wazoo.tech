@@ -5,7 +5,7 @@
     "@std/http": "jsr:@std/http@^1.0.21"
   },
   "tasks": {
-    "dev": "deno serve --allow-read --allow-import --allow-env --parallel main.ts",
+    "dev": "deno serve --watch --allow-read --allow-import --allow-env --parallel main.ts",
     "outdated": "deno outdated --latest --update"
   }
 }
