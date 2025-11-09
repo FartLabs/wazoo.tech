@@ -40,7 +40,8 @@
         --text-primary-light: #3e2723; /* Dark Brown */
         --accent-primary-light: #ff9800; /* Orange */
         --accent-secondary-light: #ffc107; /* Amber */
-        --card-bg-light: #ffffe0; /* Lighter Yellow */
+        --card-bg-light: #8d6e63; /* Dark Brown */
+        --card-text-light: #fff9c4; /* Light Yellow */
 
         /* Dark Mode Colors */
         --bg-primary-dark: #331a00; /* Dark Brown */
@@ -49,7 +50,8 @@
         --text-primary-dark: #ffab40; /* Orange-Yellow */
         --accent-primary-dark: #ff9800; /* Orange */
         --accent-secondary-dark: #ffc107; /* Amber */
-        --card-bg-dark: #4e342e; /* Darker Brown */
+        --card-bg-dark: #3e2723; /* Very Dark Brown */
+        --card-text-dark: #ffab40; /* Orange-Yellow */
 
         /* Default to Light Mode */
         --bg-primary: var(--bg-primary-light);
@@ -59,6 +61,7 @@
         --accent-primary: var(--accent-primary-light);
         --accent-secondary: var(--accent-secondary-light);
         --card-bg: var(--card-bg-light);
+        --card-text: var(--card-text-light);
       }
 
       * {
@@ -257,6 +260,7 @@
 
       .highlight-card {
         background-color: var(--card-bg);
+        color: var(--card-text);
         padding: 1.5rem;
         border-radius: 10px;
       }
@@ -290,6 +294,7 @@
 
       .company-card {
         background-color: var(--card-bg);
+        color: var(--card-text);
         padding: 0;
         border-radius: 10px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -403,6 +408,7 @@
           --accent-primary: var(--accent-primary-dark);
           --accent-secondary: var(--accent-secondary-dark);
           --card-bg: var(--card-bg-dark);
+          --card-text: var(--card-text-dark);
         }
       }
 
@@ -485,13 +491,10 @@
               redefine industries and improve lives.
             </p>
             <p>
-              Our team of innovators explores the liminal space where creativity
-              and technology converge, conjuring futuristic solutions that
-              transcend conventional limitations and address today's challenges.
-            </p>
-            <p>
-              Our team includes software engineers from Google and Amazon,
-              bringing world-class expertise to every interaction.
+              Our team of innovators, including industry professionals from
+              Google and Amazon, combines cutting-edge technologies with
+              world-class creativity that transcend conventional limitations and
+              address real-world challenges.
             </p>
           </div>
           <div class="about-highlights">
