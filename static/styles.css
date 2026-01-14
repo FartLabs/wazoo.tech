@@ -272,7 +272,6 @@ body::before {
 
 /* Social Icons */
 .footer-socials {
-  margin-top: 2rem;
   display: flex;
   gap: 1rem;
 }
