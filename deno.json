@@ -1,7 +1,6 @@
 {
   "lock": false,
   "imports": {
-    "@kitsonk/ga4": "jsr:@kitsonk/ga4@^0.1.0",
     "@std/http": "jsr:@std/http@^1.0.23"
   },
   "tasks": {

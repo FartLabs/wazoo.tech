@@ -70,7 +70,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #ff9800;
 }
 
 /* Fade-in animation keyframes */
@@ -142,8 +142,8 @@ body {
 }
 
 .link:hover {
-  color: #ffffff;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  color: #ff9800;
+  text-shadow: 0 0 8px rgba(255, 152, 0, 0.5);
 }
 
 .tools-list {
@@ -183,7 +183,7 @@ body {
 
 .new-badge {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #ff9800;
   color: #000000;
   padding: 0.125rem 0.375rem;
   font-size: 0.875rem;
@@ -203,6 +203,7 @@ body {
 
 /* Social Icons */
 .footer-socials {
+  margin-top: 1rem;
   display: flex;
   gap: 1rem;
 }
@@ -216,7 +217,7 @@ body {
 }
 
 .social-link:hover {
-  color: #0077b5; /* LinkedIn Blue */
+  color: #ff9800; /* Wazoo Orange */
   transform: translateY(-2px);
 }
 
